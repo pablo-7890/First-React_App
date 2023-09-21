@@ -1,0 +1,24 @@
+.contenedor-producto{
+  display: inline-block;
+  vertical-align: top;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin:5px;
+  width: 300px;
+  height: 350px;
+  text-align: center;
+  width: calc(25% - 10px); 
+  background-color: #e3e3e3;
+  box-sizing: border-box; 
+}
+
+.contenedor-producto img{
+  width: 150px;
+  height: 150px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+
+

@@ -1,0 +1,35 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html,body{
+  font-size:18px;
+  background-color: #f5f6f7;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.titulo{
+  margin:0;
+  text-align: center;
+  flex:1;
+}
+
+.contenedor-principal{
+  display: block;
+}
+
+.boton{
+  justify-content: center;
+  text-align: center;
+}
+
+
+
+
