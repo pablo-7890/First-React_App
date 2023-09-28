@@ -1,8 +1,12 @@
 import { useState, useEffect} from 'react';
+import { Routes, Route } from 'react-router-dom';
+import './App.css'
 import Producto from './componentes/producto';
 import Boton from './componentes/boton';
 import Usuario from './componentes/usuario';
-import './App.css'
+import ProductoDetallado from './componentes/productoDetallado';
+
+
 
 
 function App() {
@@ -42,8 +46,8 @@ function App() {
       <div className='contenedor-principal'>
         {mostrarProductos.map((producto,id)=>(
           <Producto
-          key={id}
-          descripcion={producto.title}
+          id={id+1}
+          titulo={producto.title}
           imagen={producto.image}
           precio={producto.price}
           />
@@ -53,6 +57,10 @@ function App() {
           funcionClic={funcionClic}
         />
       </div>
+      <Routes>
+          <Route path="/" element={<Producto />} />
+          <Route path="/producto/:id" element={<ProductoDetallado />} />
+      </Routes>
     </div>
   );
 }
