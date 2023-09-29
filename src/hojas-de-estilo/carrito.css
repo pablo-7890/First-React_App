@@ -1,0 +1,28 @@
+.tarjeta-carrito {
+display: flex;
+align-items: center;
+padding: 10px;
+background-color: #fff;
+border: 1px solid #e0e0e0;
+border-radius: 5px;
+margin-bottom: 10px;
+}
+
+.tarjeta-carrito img {
+max-width: 100px;
+max-height: 100px;
+margin-right: 10px;
+border-radius: 5px;
+}
+
+.tarjeta-carrito h2 {
+font-size: 18px;
+margin: 0;
+color: #333;
+}
+
+.tarjeta-carrito p {
+font-size: 16px;
+margin: 0;
+color: #777;
+}

@@ -11,7 +11,7 @@ function Producto({titulo, imagen, precio, id}){
         <Link to={`/producto/${id}`}>ver mas...</Link>
       </div>
       
-    );
+    ); 
 }
 
 export default Producto;
