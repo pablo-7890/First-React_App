@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import React from 'react';
-import '../hojas-de-estilo/productoDetallado.css'
+
 
 
 function ProductoDetallado() {
