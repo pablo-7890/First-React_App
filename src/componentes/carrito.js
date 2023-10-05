@@ -4,7 +4,6 @@ import '../hojas-de-estilo/carrito.css'
 
 function Carrito() {
     const productosCarrito = JSON.parse(localStorage.getItem('carrito')) || [];
-  
     const total = productosCarrito.reduce((total, producto) => total + producto.price, 0);
   
     return (
@@ -16,7 +15,7 @@ function Carrito() {
           <p>Precio: ${producto.price}</p>
           </li>
       ))}
-      <p className="total-compra">Total: ${total}</p>   
+      <p className="total-compra">Total: ${total.toFixed(3)}</p>   
     </div>
     );
   }
